@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- meu css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!-- barra de navegação -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">Health Track</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                            role="button" aria-controls="offcanvasExample">
+                            Menu
+                        </a>
+                       
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <h1 class="text-dark display-4 my-3 p-3 lead text-center ">
+            Vamos começar
+        
+    </div>    
+<!-- OFFFCANVAS - SIDEBAR -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">NOME DO USUÁRIO</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            
+            <div class="mt-3">
+                
+                <ul>
+                    <a class="dropdown-item" href="../pages/nutricao.html">Nutrição</a>
+                    <a class="dropdown-item" href="../pages/exercicio.html">Atividades físicas</a>
+                    <a class="dropdown-item" href="../pages/peso.html">Histórico de peso</a>
+                    <a class="dropdown-item" href="#">Configurações da conta</a>
+                    <a class="dropdown-item" href="../../index.html">Desconetar</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+                <!-- linha do grid -->
+        
+        <div class="row">
+        
+            <!-- 1a coluna do grid -->
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 my-4">
+                <div class="card text-center">
+                    <img src="../images/pexels-ella-olsson-1640777-health-food.jpg" class="card-img-top" alt="Health Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Calorias ingeridas</h5>
+                       
+                        <a href="../pages/nutricao.html" class="btn btn-personalizado mt-4">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fim 1a coluna do grid -->
+
+            <!-- 2a coluna do grid -->
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 my-4">
+                <div class="card text-center">
+                    <img src="../images/pexels-pixabay-39671-exercises.jpg" class="card-img-top" alt="Academia">
+                    <div class="card-body">
+                        <h5 class="card-title">Atividades Físicas</h5>
+                        
+                        <a href="../pages/exercicio.html" class="btn btn-personalizado mt-4">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fim 2a coluna do grid -->
+
+            <!-- 3a coluna do grid -->
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 my-4">
+                <div class="card text-center">
+                    <img src="../images/pexels-pixabay-53404-balança.jpg" class="card-img-top" alt="Balança de pesar">
+                    <div class="card-body">
+                        <h5 class="card-title">Histórico de Peso</h5>
+                        
+                        <a href="../pages/peso.html" class="btn btn-personalizado mt-4">Consultar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fim 3a coluna do grid -->
+
+
+
+        </div>
+        <!-- fim linha do grid -->
+    </div>
+
+
+</body>
+
+</html>
